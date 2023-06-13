@@ -61,7 +61,7 @@ body{
 }
 
 
-@media screen and (max-width:500px){
+@media only screen and (max-device-width:500px){
     .total{
         flex-direction: column-reverse;
         justify-content: center;
