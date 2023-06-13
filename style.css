@@ -4,7 +4,11 @@ body{
 }
 .total{
     display:flex;
-    line-height: 150%;
+    /* line-height: 150%; */
+    justify-content: space-evenly !important;
+    align-items: center;
+    margin-left:40px;
+    margin-right: 40px;
     
 }
 .intro{
@@ -15,10 +19,11 @@ body{
 .image{
     height:500px;
     width:auto;
-    margin-left:160px;
+    /* margin-left:160px; */
     margin-top:10px;
     border: 20px solid white;
     border-radius: 50px;
+    margin-left:50px;
     
 }
 .image:hover{
@@ -26,7 +31,7 @@ body{
 }
 .leftside{
     margin-top: 20px;
-    margin-left:105px;
+    /* margin-left:105px; */
     font-size: 1.2rem ;
     border: 5px solid white;
     background-color: white;
@@ -56,3 +61,21 @@ body{
 }
 
 
+@media screen and (max-width:500px){
+    .total{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-left:10px;
+        margin-right: 10px;
+    }
+    .image{
+        height:16em;
+        width:auto;
+        margin-top:10px;
+        border: 20px solid white;
+        border-radius: 50px;
+        margin-left:0px;
+      
+        
+    }
+}
